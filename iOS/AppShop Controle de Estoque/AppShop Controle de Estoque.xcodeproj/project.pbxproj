@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A56AF5D226A7D5B00AC258E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AF5C226A7D5B00AC258E /* AppDelegate.swift */; };
+		3A56AF5F226A7D5B00AC258E /* SellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AF5E226A7D5B00AC258E /* SellerViewController.swift */; };
+		3A56AF61226A7D5B00AC258E /* TechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AF60226A7D5B00AC258E /* TechViewController.swift */; };
+		3A56AF64226A7D5B00AC258E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A56AF62226A7D5B00AC258E /* Main.storyboard */; };
+		3A56AF66226A7D5D00AC258E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A56AF65226A7D5D00AC258E /* Assets.xcassets */; };
+		3A56AF69226A7D5D00AC258E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A56AF67226A7D5D00AC258E /* LaunchScreen.storyboard */; };
+		3A56AF74226A7D5D00AC258E /* AppShop_Controle_de_EstoqueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AF73226A7D5D00AC258E /* AppShop_Controle_de_EstoqueTests.swift */; };
+		3A56AF7F226A7D5D00AC258E /* AppShop_Controle_de_EstoqueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AF7E226A7D5D00AC258E /* AppShop_Controle_de_EstoqueUITests.swift */; };
+		3A56AF90226A8BE000AC258E /* sellerList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A56AF8F226A8BE000AC258E /* sellerList.txt */; };
+		3A56AF92226A8D5C00AC258E /* techList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A56AF91226A8D5C00AC258E /* techList.txt */; };
+		3A56AF97226A8FBF00AC258E /* DoneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AF96226A8FBF00AC258E /* DoneExtension.swift */; };
+		3A56AF9A226A901000AC258E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AF99226A901000AC258E /* Item.swift */; };
+		3A56AF9D226A902B00AC258E /* ItemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AF9C226A902B00AC258E /* ItemDAO.swift */; };
+		3A56AFA1226A906A00AC258E /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AFA0226A906A00AC258E /* ItemViewCell.swift */; };
+		3A56AFA3226A988900AC258E /* FirstLaunchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AFA2226A988900AC258E /* FirstLaunchExtension.swift */; };
+		3A56AFA8226AA5CB00AC258E /* icons8-card-payment-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A56AFA6226AA5CB00AC258E /* icons8-card-payment-25.png */; };
+		3A56AFA9226AA5CB00AC258E /* icons8-full-tool-storage-box-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A56AFA7226AA5CB00AC258E /* icons8-full-tool-storage-box-25.png */; };
+		3A56AFAC226AA68900AC258E /* Screen Shot 2019-04-19 at 19.44.18.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A56AFAB226AA68900AC258E /* Screen Shot 2019-04-19 at 19.44.18.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A56AF70226A7D5D00AC258E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A56AF51226A7D5B00AC258E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A56AF58226A7D5B00AC258E;
+			remoteInfo = "AppShop Controle de Estoque";
+		};
+		3A56AF7B226A7D5D00AC258E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A56AF51226A7D5B00AC258E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A56AF58226A7D5B00AC258E;
+			remoteInfo = "AppShop Controle de Estoque";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A56AF59226A7D5B00AC258E /* AppShop Controle de Estoque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppShop Controle de Estoque.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A56AF5C226A7D5B00AC258E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A56AF5E226A7D5B00AC258E /* SellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerViewController.swift; sourceTree = "<group>"; };
+		3A56AF60226A7D5B00AC258E /* TechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechViewController.swift; sourceTree = "<group>"; };
+		3A56AF63226A7D5B00AC258E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A56AF65226A7D5D00AC258E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A56AF68226A7D5D00AC258E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A56AF6A226A7D5D00AC258E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A56AF6F226A7D5D00AC258E /* AppShop Controle de EstoqueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AppShop Controle de EstoqueTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A56AF73226A7D5D00AC258E /* AppShop_Controle_de_EstoqueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShop_Controle_de_EstoqueTests.swift; sourceTree = "<group>"; };
+		3A56AF75226A7D5D00AC258E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A56AF7A226A7D5D00AC258E /* AppShop Controle de EstoqueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AppShop Controle de EstoqueUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A56AF7E226A7D5D00AC258E /* AppShop_Controle_de_EstoqueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShop_Controle_de_EstoqueUITests.swift; sourceTree = "<group>"; };
+		3A56AF80226A7D5D00AC258E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A56AF8F226A8BE000AC258E /* sellerList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sellerList.txt; sourceTree = "<group>"; };
+		3A56AF91226A8D5C00AC258E /* techList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = techList.txt; sourceTree = "<group>"; };
+		3A56AF96226A8FBF00AC258E /* DoneExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneExtension.swift; sourceTree = "<group>"; };
+		3A56AF99226A901000AC258E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3A56AF9C226A902B00AC258E /* ItemDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDAO.swift; sourceTree = "<group>"; };
+		3A56AFA0226A906A00AC258E /* ItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
+		3A56AFA2226A988900AC258E /* FirstLaunchExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchExtension.swift; sourceTree = "<group>"; };
+		3A56AFA6226AA5CB00AC258E /* icons8-card-payment-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-card-payment-25.png"; sourceTree = "<group>"; };
+		3A56AFA7226AA5CB00AC258E /* icons8-full-tool-storage-box-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-full-tool-storage-box-25.png"; sourceTree = "<group>"; };
+		3A56AFAB226AA68900AC258E /* Screen Shot 2019-04-19 at 19.44.18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-04-19 at 19.44.18.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A56AF56226A7D5B00AC258E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A56AF6C226A7D5D00AC258E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A56AF77226A7D5D00AC258E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A56AF50226A7D5B00AC258E = {
+			isa = PBXGroup;
+			children = (
+				3A56AF5B226A7D5B00AC258E /* AppShop Controle de Estoque */,
+				3A56AF72226A7D5D00AC258E /* AppShop Controle de EstoqueTests */,
+				3A56AF7D226A7D5D00AC258E /* AppShop Controle de EstoqueUITests */,
+				3A56AF5A226A7D5B00AC258E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A56AF5A226A7D5B00AC258E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AF59226A7D5B00AC258E /* AppShop Controle de Estoque.app */,
+				3A56AF6F226A7D5D00AC258E /* AppShop Controle de EstoqueTests.xctest */,
+				3A56AF7A226A7D5D00AC258E /* AppShop Controle de EstoqueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A56AF5B226A7D5B00AC258E /* AppShop Controle de Estoque */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AF98226A8FE100AC258E /* Model */,
+				3A56AF9E226A903900AC258E /* View */,
+				3A56AF9F226A904400AC258E /* Controller */,
+				3A56AF95226A8FAB00AC258E /* Components */,
+				3A56AFA4226AA2D200AC258E /* Assets */,
+				3A56AF8E226A8B9800AC258E /* Resources */,
+				3A56AF5C226A7D5B00AC258E /* AppDelegate.swift */,
+				3A56AF62226A7D5B00AC258E /* Main.storyboard */,
+				3A56AF65226A7D5D00AC258E /* Assets.xcassets */,
+				3A56AF67226A7D5D00AC258E /* LaunchScreen.storyboard */,
+				3A56AF6A226A7D5D00AC258E /* Info.plist */,
+			);
+			path = "AppShop Controle de Estoque";
+			sourceTree = "<group>";
+		};
+		3A56AF72226A7D5D00AC258E /* AppShop Controle de EstoqueTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AF73226A7D5D00AC258E /* AppShop_Controle_de_EstoqueTests.swift */,
+				3A56AF75226A7D5D00AC258E /* Info.plist */,
+			);
+			path = "AppShop Controle de EstoqueTests";
+			sourceTree = "<group>";
+		};
+		3A56AF7D226A7D5D00AC258E /* AppShop Controle de EstoqueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AF7E226A7D5D00AC258E /* AppShop_Controle_de_EstoqueUITests.swift */,
+				3A56AF80226A7D5D00AC258E /* Info.plist */,
+			);
+			path = "AppShop Controle de EstoqueUITests";
+			sourceTree = "<group>";
+		};
+		3A56AF8E226A8B9800AC258E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AF8F226A8BE000AC258E /* sellerList.txt */,
+				3A56AF91226A8D5C00AC258E /* techList.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3A56AF95226A8FAB00AC258E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AF96226A8FBF00AC258E /* DoneExtension.swift */,
+				3A56AFA2226A988900AC258E /* FirstLaunchExtension.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3A56AF98226A8FE100AC258E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AF99226A901000AC258E /* Item.swift */,
+				3A56AF9C226A902B00AC258E /* ItemDAO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A56AF9E226A903900AC258E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AFA0226A906A00AC258E /* ItemViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A56AF9F226A904400AC258E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AF5E226A7D5B00AC258E /* SellerViewController.swift */,
+				3A56AF60226A7D5B00AC258E /* TechViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A56AFA4226AA2D200AC258E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AFAA226AA64300AC258E /* Logo */,
+				3A56AFA5226AA2F000AC258E /* TabIcons */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3A56AFA5226AA2F000AC258E /* TabIcons */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AFA6226AA5CB00AC258E /* icons8-card-payment-25.png */,
+				3A56AFA7226AA5CB00AC258E /* icons8-full-tool-storage-box-25.png */,
+			);
+			path = TabIcons;
+			sourceTree = "<group>";
+		};
+		3A56AFAA226AA64300AC258E /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				3A56AFAB226AA68900AC258E /* Screen Shot 2019-04-19 at 19.44.18.png */,
+			);
+			path = Logo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A56AF58226A7D5B00AC258E /* AppShop Controle de Estoque */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A56AF83226A7D5D00AC258E /* Build configuration list for PBXNativeTarget "AppShop Controle de Estoque" */;
+			buildPhases = (
+				3A56AF55226A7D5B00AC258E /* Sources */,
+				3A56AF56226A7D5B00AC258E /* Frameworks */,
+				3A56AF57226A7D5B00AC258E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppShop Controle de Estoque";
+			productName = "AppShop Controle de Estoque";
+			productReference = 3A56AF59226A7D5B00AC258E /* AppShop Controle de Estoque.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A56AF6E226A7D5D00AC258E /* AppShop Controle de EstoqueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A56AF86226A7D5D00AC258E /* Build configuration list for PBXNativeTarget "AppShop Controle de EstoqueTests" */;
+			buildPhases = (
+				3A56AF6B226A7D5D00AC258E /* Sources */,
+				3A56AF6C226A7D5D00AC258E /* Frameworks */,
+				3A56AF6D226A7D5D00AC258E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A56AF71226A7D5D00AC258E /* PBXTargetDependency */,
+			);
+			name = "AppShop Controle de EstoqueTests";
+			productName = "AppShop Controle de EstoqueTests";
+			productReference = 3A56AF6F226A7D5D00AC258E /* AppShop Controle de EstoqueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A56AF79226A7D5D00AC258E /* AppShop Controle de EstoqueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A56AF89226A7D5D00AC258E /* Build configuration list for PBXNativeTarget "AppShop Controle de EstoqueUITests" */;
+			buildPhases = (
+				3A56AF76226A7D5D00AC258E /* Sources */,
+				3A56AF77226A7D5D00AC258E /* Frameworks */,
+				3A56AF78226A7D5D00AC258E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A56AF7C226A7D5D00AC258E /* PBXTargetDependency */,
+			);
+			name = "AppShop Controle de EstoqueUITests";
+			productName = "AppShop Controle de EstoqueUITests";
+			productReference = 3A56AF7A226A7D5D00AC258E /* AppShop Controle de EstoqueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A56AF51226A7D5B00AC258E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Igor Meira";
+				TargetAttributes = {
+					3A56AF58226A7D5B00AC258E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					3A56AF6E226A7D5D00AC258E = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 3A56AF58226A7D5B00AC258E;
+					};
+					3A56AF79226A7D5D00AC258E = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 3A56AF58226A7D5B00AC258E;
+					};
+				};
+			};
+			buildConfigurationList = 3A56AF54226A7D5B00AC258E /* Build configuration list for PBXProject "AppShop Controle de Estoque" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A56AF50226A7D5B00AC258E;
+			productRefGroup = 3A56AF5A226A7D5B00AC258E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A56AF58226A7D5B00AC258E /* AppShop Controle de Estoque */,
+				3A56AF6E226A7D5D00AC258E /* AppShop Controle de EstoqueTests */,
+				3A56AF79226A7D5D00AC258E /* AppShop Controle de EstoqueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A56AF57226A7D5B00AC258E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A56AF69226A7D5D00AC258E /* LaunchScreen.storyboard in Resources */,
+				3A56AFA9226AA5CB00AC258E /* icons8-full-tool-storage-box-25.png in Resources */,
+				3A56AF66226A7D5D00AC258E /* Assets.xcassets in Resources */,
+				3A56AF64226A7D5B00AC258E /* Main.storyboard in Resources */,
+				3A56AFA8226AA5CB00AC258E /* icons8-card-payment-25.png in Resources */,
+				3A56AF90226A8BE000AC258E /* sellerList.txt in Resources */,
+				3A56AF92226A8D5C00AC258E /* techList.txt in Resources */,
+				3A56AFAC226AA68900AC258E /* Screen Shot 2019-04-19 at 19.44.18.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A56AF6D226A7D5D00AC258E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A56AF78226A7D5D00AC258E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A56AF55226A7D5B00AC258E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A56AFA1226A906A00AC258E /* ItemViewCell.swift in Sources */,
+				3A56AF9A226A901000AC258E /* Item.swift in Sources */,
+				3A56AF61226A7D5B00AC258E /* TechViewController.swift in Sources */,
+				3A56AF97226A8FBF00AC258E /* DoneExtension.swift in Sources */,
+				3A56AF9D226A902B00AC258E /* ItemDAO.swift in Sources */,
+				3A56AFA3226A988900AC258E /* FirstLaunchExtension.swift in Sources */,
+				3A56AF5D226A7D5B00AC258E /* AppDelegate.swift in Sources */,
+				3A56AF5F226A7D5B00AC258E /* SellerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A56AF6B226A7D5D00AC258E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A56AF74226A7D5D00AC258E /* AppShop_Controle_de_EstoqueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A56AF76226A7D5D00AC258E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A56AF7F226A7D5D00AC258E /* AppShop_Controle_de_EstoqueUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A56AF71226A7D5D00AC258E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A56AF58226A7D5B00AC258E /* AppShop Controle de Estoque */;
+			targetProxy = 3A56AF70226A7D5D00AC258E /* PBXContainerItemProxy */;
+		};
+		3A56AF7C226A7D5D00AC258E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A56AF58226A7D5B00AC258E /* AppShop Controle de Estoque */;
+			targetProxy = 3A56AF7B226A7D5D00AC258E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A56AF62226A7D5B00AC258E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A56AF63226A7D5B00AC258E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A56AF67226A7D5D00AC258E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A56AF68226A7D5D00AC258E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A56AF81226A7D5D00AC258E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A56AF82226A7D5D00AC258E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A56AF84226A7D5D00AC258E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = "AppShop Controle de Estoque/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igormeira.AppShop-Controle-de-Estoque";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3A56AF85226A7D5D00AC258E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = "AppShop Controle de Estoque/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igormeira.AppShop-Controle-de-Estoque";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3A56AF87226A7D5D00AC258E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = "AppShop Controle de EstoqueTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igormeira.AppShop-Controle-de-EstoqueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppShop Controle de Estoque.app/AppShop Controle de Estoque";
+			};
+			name = Debug;
+		};
+		3A56AF88226A7D5D00AC258E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = "AppShop Controle de EstoqueTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igormeira.AppShop-Controle-de-EstoqueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppShop Controle de Estoque.app/AppShop Controle de Estoque";
+			};
+			name = Release;
+		};
+		3A56AF8A226A7D5D00AC258E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = "AppShop Controle de EstoqueUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igormeira.AppShop-Controle-de-EstoqueUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AppShop Controle de Estoque";
+			};
+			name = Debug;
+		};
+		3A56AF8B226A7D5D00AC258E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR8XKY8WGM;
+				INFOPLIST_FILE = "AppShop Controle de EstoqueUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igormeira.AppShop-Controle-de-EstoqueUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AppShop Controle de Estoque";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A56AF54226A7D5B00AC258E /* Build configuration list for PBXProject "AppShop Controle de Estoque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A56AF81226A7D5D00AC258E /* Debug */,
+				3A56AF82226A7D5D00AC258E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A56AF83226A7D5D00AC258E /* Build configuration list for PBXNativeTarget "AppShop Controle de Estoque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A56AF84226A7D5D00AC258E /* Debug */,
+				3A56AF85226A7D5D00AC258E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A56AF86226A7D5D00AC258E /* Build configuration list for PBXNativeTarget "AppShop Controle de EstoqueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A56AF87226A7D5D00AC258E /* Debug */,
+				3A56AF88226A7D5D00AC258E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A56AF89226A7D5D00AC258E /* Build configuration list for PBXNativeTarget "AppShop Controle de EstoqueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A56AF8A226A7D5D00AC258E /* Debug */,
+				3A56AF8B226A7D5D00AC258E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A56AF51226A7D5B00AC258E /* Project object */;
+}

@@ -1,0 +1,33 @@
+Tela 4g branca
+Tela 4g preta
+Tela4s branca
+Tela 4s preta
+Tela 5g branca
+Tela 5g preta
+Tela 5s branca
+Tela 5s preta
+Tela 5c
+Tela 6g branca
+Tela 6g preta
+Tela 6s branca
+Tela 6s preta
+Tela 7g branca
+Tela 7g preta
+Tela 8g branca
+Tela 8g preta
+Tela 6g plus branca
+Tela 6g plus preta
+Tela 6s plus branca
+Tela 6s plus preta
+Tela 7 plus branca
+Tela 7 plus preta
+Tela 8 plus branca
+Tela 8 plus preta
+Bateria 4g
+Bateria 4s
+Bateria 5g
+Bateria 5s
+Bateria 6g
+Bateria 6s
+Bateria 7g
+Bateria 6g/ 6s plus
