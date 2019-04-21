@@ -22,7 +22,6 @@ class FirstLaunch {
             print("Can't read de initial list file!")
             print(error)
         }
-        print(readString)
         addToSellerList(readString)
     }
     
@@ -50,7 +49,6 @@ class FirstLaunch {
             print("Can't read de initial list file!")
             print(error)
         }
-        print(readString)
         addToTechList(readString)
     }
     

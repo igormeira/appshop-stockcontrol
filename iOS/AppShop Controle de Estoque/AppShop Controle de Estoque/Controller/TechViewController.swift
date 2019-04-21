@@ -8,15 +8,18 @@
 
 import UIKit
 
-class TechViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+class TechViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, EditAnItemDelegate, AddAnItemDelegate {
     
     //MARK: - Outlets
     @IBOutlet weak var tableItem: UITableView!
     @IBOutlet weak var searchField: UISearchBar!
     
     //MARK: - Attributes
+    let FILENAME = "techlist"
     var items = Array<Item>()
     var currentItems = Array<Item>()
+    var doneList = Array<Item>()
+    var selectedItem : Item?
     
     //MARK: - View Lifecycle
     
@@ -24,16 +27,23 @@ class TechViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         navigationController?.navigationBar.barStyle = .black
         
-        firstLaunch()
-        
         tableItem.dataSource = self
         tableItem.delegate = self
         
         searchField.delegate = self
         searchField.inputAccessoryView = setToolBar(self)
         
-        items = ItemDAO("techlist").load()
+        items = ItemDAO(FILENAME).load()
         currentItems = items.sorted(by: {$0.name.localizedCaseInsensitiveCompare($1.name) == ComparisonResult.orderedAscending})
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        items = ItemDAO(FILENAME).load()
+        if searchField.text == "" {
+            currentItems = items.sorted(by: {$0.name.localizedCaseInsensitiveCompare($1.name) == ComparisonResult.orderedAscending})
+        }
+        tableItem.reloadData()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -43,7 +53,13 @@ class TechViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //MARK: - Segues
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if(segue.identifier == "editTechItemSegue") {
+            let view = segue.destination as! ItemViewController
+            guard let sItem = self.selectedItem else {return}
+            view.selectedItem = sItem
+            view.editDelegate = self
+            view.items = self.items
+        }
     }
     
     //MARK: - Search Bar
@@ -75,7 +91,31 @@ class TechViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         cell.configTechListCell(name: item.name, amount: item.amount, details: item.details)
         
+        if Util().isDone(item, doneList) {
+            cell.backgroundColor = UIColor(named: "selected")
+        } else {
+            cell.backgroundColor = .white
+        }
+        
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPress(_:)))
+        cell.addGestureRecognizer(longPressRecognizer)
+        
         return cell
+    }
+    
+    @objc func longPress(_ longPress : UILongPressGestureRecognizer) {
+        if longPress.state == .began {
+            let touchPoint = longPress.location(in: self.tableItem)
+            if let indexPath = tableItem.indexPathForRow(at: touchPoint) {
+                let item = currentItems[indexPath.row]
+                if Util().isDone(item, doneList) {
+                    doneList = Util().removeDoneItem(item, doneList)
+                } else {
+                    doneList.append(item)
+                }
+                tableItem.reloadData()
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -83,14 +123,70 @@ class TechViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+        selectedItem = currentItems[row]
+        self.performSegue(withIdentifier: "editTechItemSegue", sender: tableView.cellForRow(at: indexPath))
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    //MARK: - Methods
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
     
-    func firstLaunch() {
-        FirstLaunch().populateTechList()
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let removeButton = UITableViewRowAction(style: .default, title: "Remover") { (rowAction, indexpath) in
+            DispatchQueue.main.async {
+                let item = self.currentItems[indexPath.row]
+                RemoveItemController(controller: self).show(item, handler : { action in
+                    self.currentItems.remove(at: indexPath.row)
+                    tableView.deleteRows(at: [indexPath], with: .fade)
+                    self.removeItem(indexPath.row, item)
+                })
+                
+            }
+        }
+        
+        removeButton.backgroundColor = UIColor(named: "remove")
+        
+        return [removeButton]
+    }
+    
+    //MARK: - Methods
+    func updateTableView() {
+        ItemDAO(FILENAME).save(items)
         tableItem.reloadData()
     }
     
+    func removeItem(_ row: Int, _ item: Item) {
+        for index in 0...(items.count - 1) {
+            if (items[index].name == item.name) && (items[index].amount == item.amount) && (items[index].details == item.details) {
+                items.remove(at: index)
+                break
+            }
+        }
+        updateTableView()
+    }
+    
+    //MARK: - Delegates
+    
+    func add(_ item: Item) {
+        items.append(item)
+        currentItems.append(item)
+        updateTableView()
+    }
+    
+    func edit(_ item: Item, _ originalIndex: Int) {
+        let itm = items[originalIndex]
+        itm.name = item.name
+        itm.amount = item.amount
+        itm.details = item.details
+        updateTableView()
+    }
+    
+    @IBAction func menu(_ sender: Any) {
+        guard let navigation = navigationController else { return }
+        let menu = Menu().configMenu(navigation: navigation, doneList: doneList, view: self, filename: FILENAME, delegate: self)
+        present(menu, animated: true, completion: nil)
+    }
 }
