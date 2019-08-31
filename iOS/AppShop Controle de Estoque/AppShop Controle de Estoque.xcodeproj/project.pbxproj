@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A49D81E227899D3006B0DCA /* icons8-checked-60-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A49D81C227899D3006B0DCA /* icons8-checked-60-grey.png */; };
+		3A49D81F227899D3006B0DCA /* icons8-checked-60-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A49D81D227899D3006B0DCA /* icons8-checked-60-green.png */; };
 		3A56AF5D226A7D5B00AC258E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AF5C226A7D5B00AC258E /* AppDelegate.swift */; };
 		3A56AF5F226A7D5B00AC258E /* SellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AF5E226A7D5B00AC258E /* SellerViewController.swift */; };
 		3A56AF61226A7D5B00AC258E /* TechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56AF60226A7D5B00AC258E /* TechViewController.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A49D81C227899D3006B0DCA /* icons8-checked-60-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-checked-60-grey.png"; sourceTree = "<group>"; };
+		3A49D81D227899D3006B0DCA /* icons8-checked-60-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-checked-60-green.png"; sourceTree = "<group>"; };
 		3A56AF59226A7D5B00AC258E /* AppShop Controle de Estoque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppShop Controle de Estoque.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A56AF5C226A7D5B00AC258E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A56AF5E226A7D5B00AC258E /* SellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerViewController.swift; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 			children = (
 				3AEDB40A226B833E00B47780 /* icons8-news-feed-60.png */,
 				3AEDB404226B792D00B47780 /* icons8-back-to-60.png */,
+				3A49D81D227899D3006B0DCA /* icons8-checked-60-green.png */,
+				3A49D81C227899D3006B0DCA /* icons8-checked-60-grey.png */,
 				3AEDB405226B792D00B47780 /* icons8-checked-60.png */,
 			);
 			path = Icons;
@@ -364,7 +370,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A49D81E227899D3006B0DCA /* icons8-checked-60-grey.png in Resources */,
 				3A56AF69226A7D5D00AC258E /* LaunchScreen.storyboard in Resources */,
+				3A49D81F227899D3006B0DCA /* icons8-checked-60-green.png in Resources */,
 				3A56AFA9226AA5CB00AC258E /* icons8-full-tool-storage-box-25.png in Resources */,
 				3A56AF66226A7D5D00AC258E /* Assets.xcassets in Resources */,
 				3AEDB40B226B833E00B47780 /* icons8-news-feed-60.png in Resources */,
@@ -591,6 +599,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SR8XKY8WGM;
 				INFOPLIST_FILE = "AppShop Controle de Estoque/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -609,6 +618,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SR8XKY8WGM;
 				INFOPLIST_FILE = "AppShop Controle de Estoque/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

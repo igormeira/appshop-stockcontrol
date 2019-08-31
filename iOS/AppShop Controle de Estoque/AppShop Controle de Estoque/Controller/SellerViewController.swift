@@ -93,13 +93,9 @@ class SellerViewController: UIViewController, UITableViewDataSource, UITableView
         let row = indexPath.row
         let item = currentItems[row]
         
-        cell.configSellerListCell(name: item.name, amount: item.amount, details: item.details)
+        let selected = Util().isDone(item, doneList)
         
-        if Util().isDone(item, doneList) {
-            cell.backgroundColor = UIColor(named: "selected")
-        } else {
-            cell.backgroundColor = .white
-        }
+        cell.configSellerListCell(name: item.name, amount: item.amount, details: item.details, selected: selected)
         
         let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPress(_:)))
         cell.addGestureRecognizer(longPressRecognizer)

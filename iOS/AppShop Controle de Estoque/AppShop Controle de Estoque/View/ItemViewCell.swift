@@ -14,22 +14,26 @@ class ItemViewCell: UITableViewCell {
     @IBOutlet weak var labelSellerName: UILabel!
     @IBOutlet weak var labelSellerAmount: UILabel!
     @IBOutlet weak var labelSellerDetails: UILabel!
+    @IBOutlet weak var imgSellerSelected: UIImageView!
     
     @IBOutlet weak var labelTechName: UILabel!
     @IBOutlet weak var labelTechAmount: UILabel!
     @IBOutlet weak var labelTechDetails: UILabel!
+    @IBOutlet weak var imgTechSelected: UIImageView!
     
     //MARK: - Functions
-    func configSellerListCell(name : String, amount : Int, details: String) {
+    func configSellerListCell(name : String, amount : Int, details: String, selected: Bool) {
         labelSellerName.text = "Item: \(name)"
         labelSellerAmount.text = "Qtd.: \(amount)"
         labelSellerDetails.text = "Descrição: \(details)"
+        imgSellerSelected.isHighlighted = selected
     }
     
-    func configTechListCell(name : String, amount : Int, details: String) {
+    func configTechListCell(name : String, amount : Int, details: String, selected: Bool) {
         labelTechName.text = "Item: \(name)"
         labelTechAmount.text = "Qtd.: \(amount)"
         labelTechDetails.text = "Descrição: \(details)"
+        imgTechSelected.isHighlighted = selected
     }
 
 }
